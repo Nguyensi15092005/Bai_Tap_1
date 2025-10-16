@@ -1,0 +1,60 @@
+/* Reset một chút */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+.layout {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e293b; /* Slate-800 */
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Body */
+.main-content {
+  padding: 2rem;
+  flex-grow: 1;
+  background-color: #f8fafc; /* Light background */
+  min-height: calc(100vh - 140px); /* trừ header và footer */
+}
+
+/* Footer */
+.footer {
+  padding: 1rem 2rem;
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+}
